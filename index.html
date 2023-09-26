@@ -367,6 +367,7 @@
   </div>
   <div class="background" style="background-image:url(assets/img/background/img-15.jpg)"></div>
 </section>
+<!-- JavaScript for button clicks -->
 
 
 
@@ -384,15 +385,18 @@
            improve decision-making, reduce costs, and create new revenue opportunities.</p>
        
       
-        
+       
           
     <div class="row">
       <div class="col-md-4">
           <div class="box">
               <div class="our-services settings" style="background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);">
                   <div class="icon"> <img src="https://i.imgur.com/6NKPrhO.png"> </div>
-                  <h4 style="color: yellow; font-size: 30px; font-style: 𝕿𝖞𝖕𝖊 𝖘𝖔𝖒𝖊𝖙𝖍𝖎𝖓𝖌 𝖙𝖔 𝖘𝖙𝖆𝖗𝖙;">𝖂𝖊𝖇𝖘𝖎𝖙𝖊 𝖈𝖍𝖆𝖙𝖇𝖔𝖙 𝖉𝖊𝖛𝖊𝖑𝖔𝖕𝖒𝖊𝖓𝖙</h4>
+                  <h4 style="color: yellow; font-size: 30px; font-style: 𝕿𝖞𝖕𝖊 𝖘𝖔𝖒𝖊𝖙𝖍𝖎𝖓𝖌 𝖙𝖔 𝖘𝖙𝖆𝖗𝖙;">Customer Support Chatbots</h4>
                   <p> automate customer service, provide lead generation, and answer frequently asked questions. I can develop custom chatbots that are tailored to your specific needs and goals.</p>
+                  <button id="button1" style="background: linear-gradient(to right, #13f726, #d61a5e); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-bottom: 50px;">
+                    Read More
+                </button>
               </div>
           </div>
       </div>
@@ -402,6 +406,9 @@
                   <div class="icon"> <img src="https://i.imgur.com/KMbnpFF.png"> </div>
                   <h4 style="font-size: 30px;">. 𝘼𝙄-𝙥𝙤𝙬𝙚𝙧𝙚𝙙 𝙢𝙖𝙧𝙠𝙚𝙩𝙞𝙣𝙜 𝙖𝙪𝙩𝙤𝙢𝙖𝙩𝙞𝙤𝙣</h4>
                   <p>automate your marketing campaigns using AI. . AI can help you to target your campaigns more effectively and to improve your conversion rates.</p>
+                  <button id="marketing" style="background: linear-gradient(to right, #05dbdb, #d61a5e); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-bottom: 50px;">
+                    Read More
+                </button>
               </div>
           </div>
       </div>
@@ -409,34 +416,16 @@
           <div class="box">
               <div class="our-services privacy"  style=" font: size 30px;background-image: linear-gradient( 109.6deg,  rgb(14, 231, 90) 11.2%, rgba(114,173,255,1) 91.1% );">
                   <div class="icon"> <img src="https://i.imgur.com/AgyneKA.png"> </div>
-                  <h4 style="font-size: 30px; color: rgb(1, 16, 39);" > █▓▒▒░░░AI-powered sales automation░░░▒▒▓█</h4>
-                  <p>automate your sales process using AI. AI can help you to close more deals and to grow your sales pipeline. </p>
+                  <h4 style="font-size: 30px; color: rgb(1, 16, 39);" > █▓▒▒░░░░  Workflow Automations░░▒▒▓█</h4>
+                  <p>automate your work Any workflow that involves human interaction increases the likelihood of the introduction of errors, and can add up to a ton of elapsed time. </p>
                 <div style="margin-bottom: 102px;">
         
-    <button id="readMoreButton" style="background: linear-gradient(to right, #ff8c05, #d61a5e); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-bottom: 50px;">
-        Read More
-    </button>
+                  <button id="sales" style="background: linear-gradient(to right, #ff8c05, #d61a5e); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-bottom: 50px;">
+                    Read More
+                </button>
 
-    <iframe id="externalContent" style="width: 100%; height: 600px; border: none;"></iframe>
-
-    <script>
-        // Function to load external content into the iframe
-        function loadExternalContent() {
-            const iframe = document.getElementById('externalContent');
-
-            // URL of the external website
-            const externalURL = 'https://blog.hubspot.com/marketing/ai-marketing-automation';
-
-            // Construct the iframe source URL to include only the desired content
-            const iframeSrc = `${externalURL} #content-main`;
-
-            // Set the iframe source
-            iframe.src = iframeSrc;
-        }
-
-        // Attach a click event listener to the "Read More" button
-        document.getElementById('readMoreButton').addEventListener('click', loadExternalContent);
-    </script>
+                
+  
               </div>
           </div>
       </div>
@@ -446,8 +435,11 @@
           <div class="box">
               <div class="our-services backups"  style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );" >
                   <div class="icon"> <img src="https://i.imgur.com/vdH9LKi.png"> </div>
-                  <h4 style="font-size: 30px; color: #09e42d;"> 𝘿𝙖𝙩𝙖 𝘼𝙣𝙖𝙡𝙮𝙨𝙞𝙨 𝘼𝙣𝙙 𝙑𝙞𝙨𝙪𝙖𝙡𝙞𝙨𝙖𝙩𝙞𝙤𝙣</h4>
-                  <p> identify trends and patterns in data, to compare different data sets, and to make predictions about future outcomes maximise your profits and scale your business   </p>
+                  <h4 style="font-size: 30px; color: #09e42d;"> Personalized Cold Outreach Systems</h4>
+                  <p> Many businesses use emails to find leads and customers. Dont spend a lot of money on purchasing leads from lead generation companies  send us a message </p>
+                  <button id="data" style="background: linear-gradient(to right, #ff8c05, #d61a5e); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-bottom: 50px;">
+                    Read More
+                </button>
               </div>
           </div>
       </div>
@@ -457,6 +449,9 @@
                   <div class="icon"> <img src="https://i.imgur.com/v6OnUqu.png"> </div>
                   <h4 style="font-size: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black;" >█▓▒▒░░░.Resume Assesment System░░░▒▒▓█</h4>
                   <p>automate the resume screening process, saving you time and money. We can help you identify the most qualified candidates for your open positions, even from a large pool of applicants. </p>
+                  <button id="resume" style="background: linear-gradient(to right, #ff8c05, #d61a5e); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-bottom: 50px;">
+                    Read More
+                </button>
               </div>
           </div>
       </div>
@@ -464,8 +459,11 @@
           <div class="box">
               <div class="our-services database"  style="background-color: rgb(214, 145, 16);">
                   <div class="icon"> <img src="https://i.imgur.com/VzjZw9M.png"> </div>
-                  <h4 style="font-size: 30px; color: rgb(19, 19, 18);" >. ᴀɪ ᴘᴏᴡᴇʀᴇᴅ ᴄᴜꜱᴛᴏᴍᴇʀ ꜱᴇʀᴠɪᴄᴇ</h4>
-                  <p> improve your customer service using AI. AI can help you to provide a better customer experience and to increase customer satisfaction.</p>
+                  <h4 style="font-size: 30px; color: rgb(19, 19, 18);" >AI Consultants</h4>
+                  <p> we create systems can access business data and provide assistance to business owners in making decisions, offering valuable insights based on data analysis.</p>
+                  <button id="customer" style="background: linear-gradient(to right, #ff8c05, #d61a5e); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-bottom: 50px;">
+                    Read More
+                </button>
               </div>
           </div>
       </div>
@@ -1028,6 +1026,44 @@
 
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>
+<script>
+  // Function to load the corresponding page when a button is clicked
+  function loadPage(buttonId) {
+      let redirectUrl;
+
+      // Determine the redirection URL based on the button's id
+      switch (buttonId) {
+          case 'button1':
+              redirectUrl = 'market.html'; // Specify the URL for Button 1
+              break;
+          case 'button2':
+              redirectUrl = '.html'; // Specify the URL for Button 2
+              break;
+          // Add cases for Buttons 3 to 6 with their respective URLs
+          // Example:
+          // case 'button3':
+          //     redirectUrl = 'page3.html';
+          //     break;
+          default:
+              // Handle cases for buttons with no specified URLs
+              break;
+      }
+
+      // Redirect to the determined URL
+      if (redirectUrl) {
+          window.location.href = redirectUrl;
+      }
+  }
+
+  // Attach the loadPage function to the click events of each button
+  const button1 = document.getElementById('button1');
+  button1.addEventListener('click', () => loadPage('button1'));
+
+  const button2 = document.getElementById('button2');
+  button2.addEventListener('click', () => loadPage('button2'));
+
+  // Repeat for Buttons 3 to 6 with their respective ids
+</script>
 		
 </body>
 </html>
