@@ -6,7 +6,16 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
+   <!-- Font Awesome -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+ />
+ <!-- Google Font -->
+ <link
+   href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+   rel="stylesheet"
+ />
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -169,6 +178,25 @@
   <symbol id="youtube" viewBox="0 0 24 24"><path d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1-2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3-1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z"/></symbol>
 
 </svg>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select the "Services" link
+    const servicesLink = document.querySelector('a[href=".slide"]');
+
+    // Add a click event listener to scroll smoothly to the section with the "slide" class
+    servicesLink.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default link behavior
+
+      // Get the target section (the one with the "slide" class)
+      const targetSection = document.querySelector('.slide');
+
+      // Scroll to the target section smoothly
+      targetSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
 
 <!-- Navigation -->
 <nav class="side pole">
@@ -177,24 +205,48 @@
   </div>
 
 </nav>
- 
+ <style>
+.chat-button {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.3s ease;
+  vertical-align: middle; /* Adjust vertical alignment */
+}
+
+.chat-button:hover {
+  background: linear-gradient(135deg, #0083b0, #00b4db);
+  color: #fff;
+}
+
+/* Chat icon styles (customize the appearance) */
+.chat-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+ </style>
 <!-- Panel Top #08 -->
 <nav class="panel top" id="navbar" style="position: fixed; top: 0; left: 0; width: 100%; transition: top 0.3s ease;">
- 
-<div class="sections desktop">
-  <h1 style="font-weight: 900; background: -webkit-linear-gradient(right, #d61a5e, #ff8c05); -webkit-background-clip: text; -webkit-text-fill-color: transparent; float: left;">Aztec </h1>
-  </a>
-
-
-  
+  <div class="sections desktop">
    
+
+  <h1 style="font-weight: 900; background: -webkit-linear-gradient(right, #d61a5e, #ff8c05); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Aztec </h1>
+    </a>
+    
     <div class="center">
       <ul class="menu uppercase">
-        <li><a href="#">Tour</a></li>
-        <li><a href="#">Upgrade</a></li>
+        <li><a href="https://youtu.be/gCCNS-SpIuE">Tour</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#">Help</a></li>
         <li><a href="#">Explore</a></li>
       </ul>
+      
     
     <div class="right">
       <ul class="menu trim">
@@ -204,10 +256,12 @@
       </ul>
     </div>
   </div>
+  
   <div class="sections compact hidden">
     <div class="left"><a href="https://designmodo.com/?u=3165" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
     <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
   </div>
+ 
 </nav>
 
 <!-- Sidebar -->
@@ -244,31 +298,30 @@
   <div class="content">
     
     <div class="container">
-      
-        <div class="wrap">
-            <div class="fix-6-12 left toLeft">
-               <h1 style="font-family: Georgia,; color: yellow;" class="ae-1">✩𝑨𝒛𝒕𝒆𝒄 𝒊𝒏𝒕𝒆𝒍𝒊𝒈𝒆𝒏𝒄𝒆✩</h1>
-
-              <h2 class="ae-1 " style="color: #eee;">Designers are meant to be loved, not to be understood.</h2>
-              <p class="ae-2"><span class="opacity-8">You must forget all your theories, all your ideas before the subject. What part of these is really your own will be expressed in your&nbsp;expression.</span></p>
-              <a class="button blue gradient crop ae-3">Get Started</a>
-            </div>
+      <div class="wrap">
+        <div class="fix-6-12 left toLeft">
+          <h1 style="font-family: Georgia; color: yellow;" class="ae-1">✩𝑨𝒛𝒕𝒆𝒄 𝒊𝒏𝒕𝒆𝒍𝒊𝒈𝒆𝒏𝒄𝒆✩</h1>
+          <h2 class="ae-1" style="color: #eee;">Unlock the Power of AI: Your gateway to the future..</h2>
+          <p class="ae-2"><span class="opacity-8">Unleash its potential, or watch your competition do it for you. In the age of AI, the choice is clear – adapt and thrive, or resist and risk obsolescence. Join the AI revolution or become a casualty of innovation.</span></p>
+          <div class="ae-1" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+            <a href="https://api.whatsapp.com/send?phone=+254795704273" class="chat-button">
+              <span class="chat-icon">💬</span>
+              Consult us
+            </a>
           </div>
-              
-        </div>  
+          <div class="ae-1"  style="display: inline-block;">
+            <a href="mailto:your-email@gmail.com">
+              <img src="img/icons8-gmail-48.png" alt="Gmail Icon" width="30" height="30">
+            </a>
+          </div>
+        </div>
       </div>
-
     </div>
+    
   </div>
-  <div class="background" style="background-image:url(assets/img/background/img-09.webp)"></div>
+  <div class="background" style="background-image:url(assets/img/img-09.webp)"></div>
 </section>
 
-
-<!-- Slide 2 (#15) -->
-<!-- Slide 2 (#15) -->
-<!-- Slide 2 (#15) -->
-<!-- Slide 2 (#15) -->
-<!-- Slide 2 (#15) -->
 <!-- Slide 2 (#15) -->
 <section class="slide fade-6 kenBurns fromLeft">
   <div class="content" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0;">
@@ -279,22 +332,22 @@
           <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="text-align: left;">
               <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
-              <h1 class="mb-4" style="color: #34b5bf;">We Make Your Business Smarter with Artificial Intelligence</h1>
-              <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                clita duo justo et tempor eirmod magna dolore erat amet</p>
-              <p class="mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no
-                labore lorem sit. Sanctus clita duo justo et tempor.</p>
+              <h1 class="mb-4" style="color: #34b5bf; text-align: left;">We Make Your Business Smarter with Artificial Intelligence</h1>
+              <p class="mb-4" >   in today's dynamic marketplace, staying ahead requires more than just adaptation – it demands innovation. That's where we come in. Empower Your Business with Cutting-Edge Artificial Intelligence Solutions. 
+                Experience the Future of Smart Decision-Making we specialize in crafting advanced Artificial Intelligence technologies
+                 that redefine the way businesses operate.
+                 Our mission is to make your business smarter, more efficient, and future-</p>
+              <p class="mb-4"> Experience the thrill of embracing AI, and let's shape a brighter tomorrow.</p>
               <div class="row g-3">
                 <div class="col-sm-6" st>
-                  <h6 class="mb-3" style="color: #22dd73;"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                  <h6 class="mb-0" style="color: red;"><i class="fa fa-check text-primary me-2 "></i>Professional Staff</h6>
+                  <h6 class="mb-3" style="color: #22dd73; font-size: 20px;"><i class="fa fa-check text-primary me-2"></i>Enhanced Decision-Making</h6>
+                  <h6 class="mb-3" style="color: red; font-size: 23px;"><i class="fa fa-check text-primary me-2 "></i>Fair prices </h6>
                 </div>
                 <div class="col-sm-6">
-                  <h6 class="mb-3" style="color: #eee;"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                  <h6 class="mb-0" style="color: #d40fc4;"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
+                  <h6 class="mb-3" style="color: #eef106; font-size: 22px;"><i class="fa fa-check text-primary me-2"></i>24/7 Free consultation </h6>
+                  <h6 class="mb-0" style="color: #d40fc4;font-size: 20px;" ><i class="fa fa-check text-primary me-2"></i>Improved Operational Efficiency</h6>
                 </div>
               </div>
               <div class="d-flex align-items-center mt-4">
@@ -315,10 +368,10 @@
   <div class="background" style="background-image:url(assets/img/background/img-15.jpg)"></div>
 </section>
 
->
+
 
 <!-- Slide 3 (#14) -->
-<section class="slide fade-6 kenBurns fromLeft">
+<section class="slide fade-6 kenBurns fromLeft" id="services">
   <div class="content">
     <div class="text-center mt-5" style="color: yellow;">
         <h1 style="color: #f5f107; " >𝕺𝖚𝖗 𝕾𝖊𝖗𝖛𝖎𝖈𝖊𝖘✍</h1>
@@ -327,9 +380,8 @@
     <div class="container">
       <div class="container">
         <h1  style="text-align: center; color: #09e42d; "  >𝑶𝒖𝒓 𝑬𝒙𝒄𝒆𝒍𝒍𝒆𝒏𝒕 𝑨𝑰 𝑺𝒐𝒍𝒖𝒕𝒊𝒐𝒏𝒔 𝒇𝒐𝒓 𝒀𝒐𝒖𝒓 𝑩𝒖𝒔𝒊𝒏𝒆𝒔𝒔</h1>
-        <p style="text-align: center; ">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-        clita duo justo et tempor eirmod magna dolore erat amet</p>
+        <p style="text-align: center; ">Ai is rapidly transforming businesses of all sizes. AI services can help businesses automate tasks,
+           improve decision-making, reduce costs, and create new revenue opportunities.</p>
        
       
         
@@ -359,6 +411,32 @@
                   <div class="icon"> <img src="https://i.imgur.com/AgyneKA.png"> </div>
                   <h4 style="font-size: 30px; color: rgb(1, 16, 39);" > █▓▒▒░░░AI-powered sales automation░░░▒▒▓█</h4>
                   <p>automate your sales process using AI. AI can help you to close more deals and to grow your sales pipeline. </p>
+                <div style="margin-bottom: 102px;">
+        
+    <button id="readMoreButton" style="background: linear-gradient(to right, #ff8c05, #d61a5e); color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-bottom: 50px;">
+        Read More
+    </button>
+
+    <iframe id="externalContent" style="width: 100%; height: 600px; border: none;"></iframe>
+
+    <script>
+        // Function to load external content into the iframe
+        function loadExternalContent() {
+            const iframe = document.getElementById('externalContent');
+
+            // URL of the external website
+            const externalURL = 'https://blog.hubspot.com/marketing/ai-marketing-automation';
+
+            // Construct the iframe source URL to include only the desired content
+            const iframeSrc = `${externalURL} #content-main`;
+
+            // Set the iframe source
+            iframe.src = iframeSrc;
+        }
+
+        // Attach a click event listener to the "Read More" button
+        document.getElementById('readMoreButton').addEventListener('click', loadExternalContent);
+    </script>
               </div>
           </div>
       </div>
@@ -368,8 +446,8 @@
           <div class="box">
               <div class="our-services backups"  style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );" >
                   <div class="icon"> <img src="https://i.imgur.com/vdH9LKi.png"> </div>
-                  <h4 style="font: size 50px;"> AI-powered process automations</h4>
-                  <p>automate your business processes using AI.  AI can help you to save time and money, and to improve the efficiency of your business. </p>
+                  <h4 style="font-size: 30px; color: #09e42d;"> 𝘿𝙖𝙩𝙖 𝘼𝙣𝙖𝙡𝙮𝙨𝙞𝙨 𝘼𝙣𝙙 𝙑𝙞𝙨𝙪𝙖𝙡𝙞𝙨𝙖𝙩𝙞𝙤𝙣</h4>
+                  <p> identify trends and patterns in data, to compare different data sets, and to make predictions about future outcomes maximise your profits and scale your business   </p>
               </div>
           </div>
       </div>
@@ -377,8 +455,8 @@
           <div class="box">
               <div class="our-services ssl"  style="background-color: rgb(41, 120, 151);">
                   <div class="icon"> <img src="https://i.imgur.com/v6OnUqu.png"> </div>
-                  <h4 style="font: size 30px;">. AI-powered data analysis</h4>
-                  <p>analyze your data using AI. . AI can help you to make better business decisions and to improve your bottom line.</p>
+                  <h4 style="font-size: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black;" >█▓▒▒░░░.Resume Assesment System░░░▒▒▓█</h4>
+                  <p>automate the resume screening process, saving you time and money. We can help you identify the most qualified candidates for your open positions, even from a large pool of applicants. </p>
               </div>
           </div>
       </div>
@@ -386,7 +464,7 @@
           <div class="box">
               <div class="our-services database"  style="background-color: rgb(214, 145, 16);">
                   <div class="icon"> <img src="https://i.imgur.com/VzjZw9M.png"> </div>
-                  <h4 style="font: size 50px;">. AI-powered customer service</h4>
+                  <h4 style="font-size: 30px; color: rgb(19, 19, 18);" >. ᴀɪ ᴘᴏᴡᴇʀᴇᴅ ᴄᴜꜱᴛᴏᴍᴇʀ ꜱᴇʀᴠɪᴄᴇ</h4>
                   <p> improve your customer service using AI. AI can help you to provide a better customer experience and to increase customer satisfaction.</p>
               </div>
           </div>
@@ -407,21 +485,21 @@
   <div class="content">
       <div class="container">
           <div class="wrap">
-              <div class="fix-12-12">
+              <div class="fix-12-12" >
                   <!-- Replace with the HTML structure of the second section -->
                   <div class="container-fluid bg-light py-5">
                       <div class="container py-5">
                           <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
                               <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Case Study</div>
-                              <h1 class="mb-4">Explore Our Recent AI Case Studies</h1>
+                              <h1 class="mb-4">Explore Our Recent AI Automations</h1>
                           </div>
                           <div class="row g-4">
                               <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                                   <div class="case-item position-relative overflow-hidden rounded mb-2">
                                       <img class="img-fluid" src="img/project-1.jpg" alt="">
                                       <a class="case-overlay text-decoration-none" href="">
-                                          <small>Robotic Automation</small>
-                                          <h5 class="lh-base text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita
+                                          <small style="color: rgb(30, 255, 0);">lead vetting system</small>
+                                          <h5 class="lh-base text-white mb-3">reduce the number of hours for your team vetting leads
                                           </h5>
                                           <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
                                       </a>
@@ -431,8 +509,8 @@
                                   <div class="case-item position-relative overflow-hidden rounded mb-2">
                                       <img class="img-fluid" src="img/project-2.jpg" alt="">
                                       <a class="case-overlay text-decoration-none" href="">
-                                          <small>Machine learning</small>
-                                          <h5 class="lh-base text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita
+                                          <small style="color: yellow;"> Customer support chatbot</small>
+                                          <h5 class="lh-base text-white mb-3"> CUt cost of hiring customer support Reduce calls made for customer support serve more customers at the same time 
                                           </h5>
                                           <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
                                       </a>
@@ -442,8 +520,8 @@
                                   <div class="case-item position-relative overflow-hidden rounded mb-2">
                                       <img class="img-fluid" src="img/project-3.jpg" alt="">
                                       <a class="case-overlay text-decoration-none" href="">
-                                          <small>Predictive Analysis</small>
-                                          <h5 class="lh-base text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita
+                                          <small style="color: rgb(228, 18, 165);">Resume Assesment system </small>
+                                          <h5 class="lh-base text-white mb-3 ">reduce Hr hours spent on resume vetting 
                                           </h5>
                                           <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
                                       </a>
@@ -457,7 +535,7 @@
           </div>
       </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/img-89.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/pref.webp)"></div>
 </section>
 <style>
   .container {
@@ -474,36 +552,35 @@
                   <div class="container-fluid bg-primary feature pt-5">
                       <div class="container pt-5">
                           <div class="row g-5">
-                              <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                              <div class="col-12 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
                                   <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div>
-                                  <h1 class="text-white mb-4">We're Best in AI Industry with 10 Years of Experience</h1>
-                                  <p class="text-light mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                                      stet no labore lorem sit. Sanctus clita duo justo et tempor</p>
+                                  <h1 class="text-white mb-4">We create  AI solutions that are tailored to your unique needs and goals. </h1>
+                                  <p class="text-light mb-4">We don't just implement AI, we craft solutions that drive efficiency, boost productivity, and enhance your competitive edge.</p>
                                   <div class="d-flex align-items-center text-white mb-3">
                                       <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
                                           <i class="fa fa-check"></i>
                                       </div>
-                                      <span>Diam dolor diam ipsum et tempor sit</span>
+                                      <span style=" font-size: 17px; color: #09e42d;">Cutting-Edge Technology:.</span>
                                   </div>
                                   <div class="d-flex align-items-center text-white mb-3">
                                       <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
                                           <i class="fa fa-check"></i>
                                       </div>
-                                      <span>Diam dolor diam ipsum et tempor sit</span>
+                                      <span style=" font-size: 20px; color: rgb(101, 4, 114);" >Strategic Focus: .</span>
                                   </div>
                                   <div class="d-flex align-items-center text-white mb-3">
                                       <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
                                           <i class="fa fa-check"></i>
                                       </div>
-                                      <span>Diam dolor diam ipsum et tempor sit</span>
+                                      <span style=" font-size: 20px; color: yellow;">Dedicated Support: .</span>
                                   </div>
                                   <div class="row g-4 pt-3">
                                       <div class="col-sm-6">
                                           <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
                                               <i class="fa fa-users fa-3x text-white"></i>
                                               <div class="ms-3">
-                                                  <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
-                                                  <p class="text-white mb-0">Happy Clients</p>
+                                                  <h2 class="text-white mb-0" data-toggle="counter-up">999</h2>
+                                                  <p class="text-white mb-0">Targeted Clients</p>
                                               </div>
                                           </div>
                                       </div>
@@ -511,8 +588,8 @@
                                           <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
                                               <i class="fa fa-check fa-3x text-white"></i>
                                               <div class="ms-3">
-                                                  <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
-                                                  <p class="text-white mb-0">Project Complete</p>
+                                                  <h2 class="text-white mb-0" data-toggle="counter-up">99%</h2>
+                                                  <p class="text-white mb-0">Accuracy</p>
                                               </div>
                                           </div>
                                       </div>
@@ -529,192 +606,388 @@
           </div>
       </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/img-89.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/img89.jpg)"></div>
 </section>
 <section class="slide fade-6 kenBurns">
   <div class="content">
       <div class="container">
           <div class="wrap">
-              <div class="fix-12-12">
-                  <!-- Replace with the HTML structure of the second section -->
-                  <div class="container-fluid bg-light py-5" style="max-width: 5600px;">
-                      <div class="container py-5">
-                        <div class="row g-5 align-items-center">
-                          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                              <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>
-                              <h1 class="mb-4">Meet Our Experienced Team Members</h1>
-                              <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                  amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                                  clita duo justo et tempor eirmod magna dolore erat amet</p>
-                              <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
-                          </div>
-                          <div class="col-lg-7">
-                              <div class="row g-4">
-                                  <div class="col-md-6">
-                                      <div class="row g-4">
-                                          <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                              <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                                  <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
-                                                  <h5 class="mb-0">Boris Johnson</h5>
-                                                  <small>Founder & CEO</small>
-                                                  <div class="d-flex justify-content-center mt-3">
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-facebook-f"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-twitter"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-instagram"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-linkedin-in"></i></a>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                              <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                                  <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">
-                                                  <h5 class="mb-0">Adam Crew</h5>
-                                                  <small>Executive Manager</small>
-                                                  <div class="d-flex justify-content-center mt-3">
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-facebook-f"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-twitter"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-instagram"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-linkedin-in"></i></a>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-6 pt-md-4">
-                                      <div class="row g-4">
-                                          <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                              <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                                  <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
-                                                  <h5 class="mb-0">Kate Winslet</h5>
-                                                  <small>Co Founder</small>
-                                                  <div class="d-flex justify-content-center mt-3">
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-facebook-f"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-twitter"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-instagram"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-linkedin-in"></i></a>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
-                                              <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                                  <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">
-                                                  <h5 class="mb-0">Cody Gardner</h5>
-                                                  <small>Project Manager</small>
-                                                  <div class="d-flex justify-content-center mt-3">
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-facebook-f"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-twitter"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-instagram"></i></a>
-                                                      <a class="btn btn-square btn-primary m-1" href=""><i
-                                                              class="fab fa-linkedin-in"></i></a>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                      </div>
-                  </div>
-                  <!-- End of replacement -->
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="background" style="background-image:url(assets/img/background/img-8.jpg)"></div>
-</section>
-
-<section class="slide fade-6 kenBurns">
-  <div class="content">
-      <div class="container">
-          <div class="wrap">
-              <div class="fix-12-12">
-                  <!-- Replace with the HTML structure of the second section -->
-                  <div class="container-fluid bg-dark text-white-50 footer pt-5">
-                    <div class="container py-5">
-                        <div class="row g-5">
-                            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                                <a href="index.html" class="d-inline-block mb-3">
-                                    <h1 class="text-white">AI<span class="text-primary">.</span>Tech</h1>
-                                </a>
-                                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                    amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                                    clita duo justo et tempor</p>
-                            </div>
-                            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                                <h5 class="text-white mb-4">Get In Touch</h5>
-                                <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                                <div class="d-flex pt-2">
-                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                                <h5 class="text-white mb-4">Popular Link</h5>
-                                <a class="btn btn-link" href="">About Us</a>
-                                <a class="btn btn-link" href="">Contact Us</a>
-                                <a class="btn btn-link" href="">Privacy Policy</a>
-                                <a class="btn btn-link" href="">Terms & Condition</a>
-                                <a class="btn btn-link" href="">Career</a>
-                            </div>
-                            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                                <h5 class="text-white mb-4">Our Services</h5>
-                                <a class="btn btn-link" href="">Robotic Automation</a>
-                                <a class="btn btn-link" href="">Machine learning</a>
-                                <a class="btn btn-link" href="">Predictive Analysis</a>
-                                <a class="btn btn-link" href="">Data Science</a>
-                                <a class="btn btn-link" href="">Robot Technology</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container wow fadeIn" data-wow-delay="0.1s">
-                        <div class="copyright">
-                            <div class="row">
-                                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-            
-                                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                                </div>
-                                <div class="col-md-6 text-center text-md-end">
-                                    <div class="footer-menu">
-                                        <a href="">Home</a>
-                                        <a href="">Cookies</a>
-                                        <a href="">Help</a>
-                                        <a href="">FAQs</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div>
+              <section>
+                <div class="row">
+                  <h1 style="color: wheat;">Our Team</h1>
                 </div>
-                  <!-- End of replacement -->
-              </div>
+                <div class="row">
+                  <!-- Column 1-->
+                  <div class="column">
+                    <div class="card" >
+                      <div class="">
+  <img src="assets/img/team.jpg" style="width: 150px; height: 150px; border-radius: 50%;" />
+</div>
+                      <h3>Franklin towet</h3>
+                      <p>CEO</p>
+                      <div class="icons">
+                        <a href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fas fa-envelope"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Column 2-->
+                  <div class="column">
+                    <div class="card">
+                      <div class="img-container">
+                        <img src="profile-img-2.png" />
+                      </div>
+                      <h3>Bryant Hall</h3>
+                      <p>C.O.O</p>
+                      <div class="icons">
+                        <a href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fas fa-envelope"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Column 3-->
+                  <div class="column">
+                    <div class="card">
+                      <div class="img-container">
+                        <img src="profile-img-3.png" />
+                      </div>
+                      <h3>Hope Watkins</h3>
+                      <p>Designer</p>
+                      <div class="icons">
+                        <a href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fas fa-envelope"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <style>
+              * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+              }
+              body {
+                background-color: #f5f5f5;
+              }
+              .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 2em 1em;
+                text-align: center;
+              }
+              .column {
+                width: 100%;
+                padding: 0.5em 0;
+              }
+              
+              
+              .card {
+                box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+                padding: 3.5em 1em;
+                border-radius: 0.6em;
+                color: #1f003b;
+                cursor: pointer;
+                transition: 0.3s;
+                background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+                box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+              }
+              .card .img-container {
+                width: 8em;
+                height: 8em;
+                background-color: #a993ff;
+                padding: 0.5em;
+                border-radius: 50%;
+                margin: 0 auto 2em auto;
+              }
+              .card img {
+                width: 100%;
+                border-radius: 50%;
+              }
+              .card h3 {
+                font-weight: 500;
+              }
+              .card p {
+                font-weight: 300;
+                text-transform: uppercase;
+                margin: 0.5em 0 2em 0;
+                letter-spacing: 2px;
+              }
+              .icons {
+                width: 50%;
+                min-width: 180px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+              }
+              .card a {
+                text-decoration: none;
+                color: inherit;
+                font-size: 1.4em;
+              }
+              .card:hover {
+                background: linear-gradient(#6045ea, #8567f7);
+                color: #ffffff;
+              }
+              .card:hover .img-container {
+                transform: scale(1.15);
+              }
+              @media screen and (min-width: 768px) {
+                section {
+                  padding: 1em 7em;
+                }
+              }
+              @media screen and (min-width: 992px) {
+                section {
+                  padding: 1em;
+                }
+                .card {
+                  padding: 5em 1em;
+                }
+                .column {
+                  flex: 0 0 33.33%;
+                  max-width: 33.33%;
+                  padding: 0 1em;
+                }
+              }
+              @media screen and (max-width: 767px) {
+                .row {
+                  flex-direction: column;
+                }
+                .column {
+                  width: 100%;
+                  max-width: 100%;
+                  padding: 0.5em 0;
+                }
+              }
+            </style>
+          </div>   
+     </div>      
+  </div>
+          
+</section>
+<div>
+  
+</div>
+<section class="slide fade-6 kenBurns">
+  <div class="content">
+      <div class="">
+          <div class="wrap">
+            
+              
+              
+          </div>
+          <div class="section2">
+              <footer class="footer">
+                <div class="waves">
+                  <div class="wave" id="wave1"></div>
+                  <div class="wave" id="wave2"></div>
+                  <div class="wave" id="wave3"></div>
+                  <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social-icon">
+                  <li class="social-icon__item"><a class="social-icon__link" href="#">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                  <li class="social-icon__item"><a class="social-icon__link" href="#">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                  <li class="social-icon__item"><a class="social-icon__link" href="#">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                  <li class="social-icon__item"><a class="social-icon__link" href="#">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                </ul>
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+            
+                </ul>
+                
+              </footer>
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </div>
+            <style>
+                @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+            
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: "Poppins", sans-serif;
+            }
+            
+            .section2 {
+              display: flex;
+            
+              justify-content: flex-end;
+              align-items: flex-end;
+              min-height: 100vh;
+            }
+            
+            .footer {
+              position: relative;
+              width: 100%;
+              background: #3586ff;
+              min-height: 100px;
+              padding: 20px 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
+            
+            .social-icon,
+            .menu {
+
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 10px 0;
+              flex-wrap: wrap;
+            }
+            
+            .social-icon__item,
+            .menu__item {
+              list-style: none;
+            }
+            
+            .social-icon__link {
+              font-size: 2rem;
+              color: #fff;
+              margin: 0 10px;
+              display: inline-block;
+              transition: 0.5s;
+            }
+            .social-icon__link:hover {
+              transform: translateY(-10px);
+            }
+            
+            .menu__link {
+              font-size: 1.2rem;
+              color: #fff;
+              margin: 0 10px;
+              display: inline-block;
+              transition: 0.5s;
+              text-decoration: none;
+              opacity: 0.75;
+              font-weight: 300;
+            }
+            
+            .menu__link:hover {
+              opacity: 1;
+            }
+            
+            .footer p {
+              color: #fff;
+              margin: 15px 0 10px 0;
+              font-size: 1rem;
+              font-weight: 300;
+            }
+            
+            .wave {
+              position: absolute;
+              top: -100px;
+              left: 0;
+              width: 100%;
+              height: 100px;
+              background: url("https://i.ibb.co/wQZVxxk/wave.png");
+              background-size: 1000px 100px;
+            }
+            
+            .wave#wave1 {
+              z-index: 1000;
+              opacity: 1;
+              bottom: 0;
+              animation: animateWaves 4s linear infinite;
+            }
+            
+            .wave#wave2 {
+              z-index: 999;
+              opacity: 0.5;
+              bottom: 10px;
+              animation: animate 4s linear infinite !important;
+            }
+            
+            .wave#wave3 {
+              z-index: 1000;
+              opacity: 0.2;
+              bottom: 15px;
+              animation: animateWaves 3s linear infinite;
+            }
+            
+            .wave#wave4 {
+              z-index: 999;
+              opacity: 0.7;
+              bottom: 20px;
+              animation: animate 3s linear infinite;
+            }
+            
+            @keyframes animateWaves {
+              0% {
+                background-position-x: 1000px;
+              }
+              100% {
+                background-positon-x: 0px;
+              }
+            }
+            
+            @keyframes animate {
+              0% {
+                background-position-x: -1000px;
+              }
+              100% {
+                background-positon-x: 0px;
+              }
+            }
+            </style>
           </div>
       </div>
   </div>
-
+      </div>
+      
+  </div>
+  
+  <div class="background" style="background-image:url(assets/img/background/img8.jpg)"></div>
 </section>
 
 <!-- Popup Video -->
